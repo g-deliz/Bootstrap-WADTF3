@@ -10,6 +10,18 @@ const totalDisplay = document.getElementById("orderTotal");
 
 let quantity = 1;
 
+function showToast(toastElement, toastMessage, message, type = "success") {
+    toastElement.classList.remove("bg-success", "bg-danger");
+    toastElement.classList.add(type === "success" ? "bg-success" : "bg-danger");
+    toastMessage.textContent = message;
+
+    const toast = new bootstrap.Toast(toastElement, {
+        delay: 6000
+    });
+
+    toast.show();
+}
+
 function updateTotal() {
     const item = menuItem.value;
     const price = prices[item];
