@@ -1,0 +1,333 @@
+html{
+    scroll-behavior:smooth;
+}
+
+/* Color Palette */
+
+:root {
+    --coffee-dark: #2F241F;
+    --coffee-brown: #6F4E37;
+    --coffee-light: #C19A6B;
+    --coffee-accent: #D4A373;
+    --cream: #F8F5F2;
+    --white: #FFFFFF;
+}
+
+/* General Styling */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cream);
+    color: var(--coffee-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+section {
+    padding: 80px 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: var(--coffee-dark);
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--white) !important;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    margin-left: 18px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--coffee-accent) !important;
+}
+
+.btn-warning {
+    background-color: var(--coffee-accent);
+    border: none;
+    color: var(--coffee-dark);
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: var(--coffee-light);
+    color: white;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    color: var(--coffee-dark);
+    line-height: 1.2;
+}
+
+.hero p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 25px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+    transition: transform .4s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.03);
+}
+
+.btn-outline-dark:hover {
+    background: var(--coffee-dark);
+    color: white;
+}
+
+/* Featured Menu */
+
+#menu {
+    background: white;
+}
+
+#menu h2 {
+    color: var(--coffee-dark);
+    margin-bottom: 15px;
+}
+
+.card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all .35s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--coffee-brown);
+}
+
+.card-footer {
+    padding: 1rem;
+}
+
+.badge {
+    padding: .6em .9em;
+}
+
+/* About Section */
+
+#about {
+    background-color: var(--cream);
+}
+
+#about h2 {
+    color: var(--coffee-dark);
+    margin-bottom: 20px;
+}
+
+.about-image {
+    border-radius: 20px;
+    transition: transform .4s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.02);
+}
+
+.feature-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+.feature-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.feature-box h5 {
+    color: var(--coffee-brown);
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: .95rem;
+    color: #666;
+}
+
+/* Reservation Section */
+
+#reservation {
+    background: white;
+}
+
+#reservation h2 {
+    color: var(--coffee-dark);
+}
+
+.reservation-card {
+    background: var(--cream);
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--coffee-accent);
+    box-shadow: 0 0 10px rgba(212,163,115,.35);
+}
+
+textarea {
+    resize: none;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--coffee-dark);
+}
+
+/* Contact Section */
+#contact {
+    background-color: var(--cream);
+}
+
+.contact-card {
+    border: none;
+    border-radius: 18px;
+    transition: all .3s ease;
+    padding: 20px;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.contact-icon {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.contact-card h4 {
+    color: var(--coffee-brown);
+}
+
+.contact-card p {
+    color: #666;
+}
+
+/* Footer */
+
+footer {
+    background: var(--coffee-dark);
+    color: white;
+    padding: 50px 0 25px;
+}
+
+footer h4 {
+    color: white;
+}
+
+footer p {
+    color: rgba(255,255,255,.75);
+}
+
+footer hr {
+    border-color: rgba(255,255,255,.2);
+    margin: 30px 0;
+}
+
+.social-link{
+    color:white;
+    font-size:1.5rem;
+    margin-left:18px;
+    transition:.3s;
+}
+
+.social-link:hover {
+    color: var(--coffee-accent);
+}
+
+footer small {
+    color: rgba(255,255,255,.65);
+}
+
+/* Order Modal */
+
+.modal-header {
+    background-color: var(--coffee-dark);
+    color: white;
+}
+
+.modal-title {
+    color: white;
+}
+
+.modal-body h5 {
+    color: var(--coffee-brown);
+    font-weight: 600;
+}
+
+.input-group .btn {
+    min-width: 50px;
+}
+
+/* Toast */
+
+.toast {
+    min-width: 340px;
+}
+
+.toast-body {
+    font-weight: 500;
+}
